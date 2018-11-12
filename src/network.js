@@ -45,7 +45,7 @@ class Network {
 
     // TODO add a way to check if switch has started or not
     if (!this.dht.isStarted) {
-      return cb(errcode(new Error('Can not start network'), 'ERR_CANNOT_START_NETWORK'))
+      return cb(errcode(new Error('Can not start network'), 'ERR_NETWORK_CANNOT_START'))
     }
 
     this._running = true
